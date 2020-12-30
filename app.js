@@ -12,8 +12,10 @@ app.use(bodyParser.json());
 
 //Import Routes
 const medsRoute = require('./routes/meds');
+const membersRoute = require('./routes/members');
 
 app.use('/meds', medsRoute);
+app.use('/members', membersRoute);
 
 //ROUTES
 app.get('/',(req, res) => { 
